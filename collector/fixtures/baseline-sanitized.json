@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "BASELINE_001",
+  "event_id": "EVENT_001",
+  "timestamp_utc": "2026-07-22T12:00:00Z",
+  "source": "lab_marker",
+  "actor_alias": "synthetic-baseline-user-01",
+  "display_ip": "192.0.2.51",
+  "device_state": "unmanaged",
+  "authentication_strength": "ordinary_mfa",
+  "risk_level": "unknown",
+  "conditional_access_result": "allowed",
+  "reason_code": "BASELINE_POLICY_RESULT",
+  "session_fingerprint": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "response_status": "observed"
+}

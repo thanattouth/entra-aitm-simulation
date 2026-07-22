@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/entra-aitm/sanitized-event.schema.json",
+  "title": "Sanitized defensive showcase event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scenario_id",
+    "event_id",
+    "timestamp_utc",
+    "source",
+    "actor_alias",
+    "display_ip",
+    "device_state",
+    "authentication_strength",
+    "risk_level",
+    "conditional_access_result",
+    "reason_code",
+    "session_fingerprint",
+    "response_status"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "scenario_id": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9_-]{2,39}$" },
+    "event_id": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9_-]{2,63}$" },
+    "timestamp_utc": { "type": "string", "format": "date-time" },
+    "source": {
+      "enum": ["entra_signin", "entra_audit", "lab_marker", "operator"]
+    },
+    "actor_alias": { "type": "string", "pattern": "^synthetic-[a-z0-9-]{1,40}$" },
+    "display_ip": {
+      "type": "string",
+      "pattern": "^(192\\.0\\.2|198\\.51\\.100|203\\.0\\.113)\\.(?:[0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$"
+    },
+    "device_state": { "enum": ["unmanaged", "registered", "compliant", "unknown"] },
+    "authentication_strength": { "enum": ["ordinary_mfa", "phishing_resistant", "unknown"] },
+    "risk_level": { "enum": ["none", "low", "medium", "high", "unknown"] },
+    "conditional_access_result": {
+      "enum": ["allowed", "not_applied", "report_only", "blocked", "restricted", "unknown"]
+    },
+    "reason_code": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9_-]{1,63}$" },
+    "session_fingerprint": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "response_status": {
+      "enum": ["none", "observed", "contained", "revoked", "reset", "blocked"]
+    }
+  }
+}
