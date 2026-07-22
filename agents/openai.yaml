@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Entra AiTM Showcase"
+  short_description: "Plan a governed isolated Entra AiTM defense lab"
+  default_prompt: "Use $plan-entra-aitm-showcase to design and execute the next approved phase of the isolated Entra AiTM defensive showcase."
