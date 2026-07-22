@@ -1,8 +1,11 @@
 # Rules of engagement
 
-Document owner: `Repository owner / requesting user (formal name required)`  
-Version: `0.1-draft`  
-Last reviewed: `2026-07-22`  
+Document owner: `Repository owner / requesting user (formal name required)`
+
+Version: `0.1-draft`
+
+Last reviewed: `2026-07-22`
+
 Approval state: **DRAFT — NOT AUTHORIZED FOR EXECUTION**
 
 ## 1. Purpose

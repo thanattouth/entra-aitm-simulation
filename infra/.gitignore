@@ -1,0 +1,4 @@
+config/lab.local.psd1
+plans/*.json
+inventory/*.json
+*.secret.*

@@ -2,8 +2,10 @@
 
 ## Current gate
 
-Current phase: **0 — Authorization and rules of engagement**  
-Gate status: **OPEN**  
+Current phase: **0 — Authorization and rules of engagement**
+
+Gate status: **OPEN**
+
 Next permitted action: complete and approve `docs/rules-of-engagement.md`.
 
 Phases 1-11 are intentionally not started. In particular, Evilginx staging is
@@ -48,6 +50,7 @@ prohibited until Phases 0-3 have each passed their approval gate.
 | 2026-07-22 | Prefer no public ingress | Reduces exposure; exact exceptions require governance/network approval | Recorded |
 | 2026-07-22 | Never invent approval or in-scope identifiers | Written, accountable scope is the Phase 0 gate | Recorded |
 | 2026-07-22 | Repository owner/requesting user holds unilateral stop authority | Confirmed directly by the user; formal name and contact remain required | Recorded |
+| 2026-07-22 | Prepare an offline infra design package while gates remain open | Supports review without provisioning, routing, firewall, tenant, or public-ingress changes; Phase 3 remains not started | Recorded |
 
 ## Risk register
 
@@ -66,6 +69,7 @@ prohibited until Phases 0-3 have each passed their approval gate.
 - Draft authorization: `docs/rules-of-engagement.md`.
 - Safety policy: `SECURITY.md`.
 - Gate validator: `tests/Test-Phase0.ps1`.
+- Offline infra design evidence: `infra/`; static validation at `tests/Test-InfraStatic.ps1` (preparatory only, not a Phase 3 exit claim).
 - Written approvals: **not yet supplied**.
 
 ## Next gate
